@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JavaApplication6PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.DiagC</class>
+    <class>DEMO.AmbuC</class>
+    <class>DEMO.GHos</class>
+    <class>DEMO.BbC</class>
+    <class>DEMO.Covid19Hospital</class>
+    <class>DEMO.Covid19Diag</class>
+    <class>DEMO.CohC</class>
+    <class>DEMO.CdiagC</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ctg_hos?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="dhaka?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.GHos</class>
+    <class>DEMO.DiagD</class>
+    <class>DEMO.BbD</class>
+    <class>DEMO.AmbuD</class>
+    <class>DEMO.Covid19Hospital</class>
+    <class>DEMO.Covid19Diag</class>
+    <class>DEMO.GHosDhk</class>
+    <class>DEMO.AmbDhk</class>
+    <class>DEMO.DiagDhk</class>
+    <class>DEMO.BloodbankDhk</class>
+    <class>DEMO.CoHosDhk</class>
+    <class>DEMO.Covid19DiagDhk</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/dhaka?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="rangpur?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.GHos</class>
+    <class>DEMO.Diag</class>
+    <class>DEMO.Ambu</class>
+    <class>DEMO.Bloodbank</class>
+    <class>DEMO.CdiagRang</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/rangpur?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="barishal?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.GHos</class>
+    <class>DEMO.Diag</class>
+    <class>DEMO.Covid19Hospital</class>
+    <class>DEMO.Covid19Diag</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/barishal?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="chittagong?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.GDiagCtg</class>
+    <class>DEMO.GhosCtg</class>
+    <class>DEMO.AmbCtg</class>
+    <class>DEMO.BloodbankCtg</class>
+    <class>DEMO.CohCtg</class>
+    <class>DEMO.CdiagCtg</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/chittagong?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="rngpur?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DEMO.HosRng</class>
+    <class>DEMO.DiagRngp</class>
+    <class>DEMO.AmbRngp</class>
+    <class>DEMO.BloodbankRngp</class>
+    <class>DEMO.ChosRng</class>
+    <class>DEMO.CoDiagRngp</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/rngpur?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
